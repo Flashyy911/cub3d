@@ -3,7 +3,7 @@
 //
 #include "cub3d.h"
 
-int ft_is_valid(char c);
+
 
 void    set_map(t_config *game_conf,char *line, int fd_cub)
 {

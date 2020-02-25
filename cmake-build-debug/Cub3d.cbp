@@ -142,6 +142,9 @@
 		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/utils.c">
 			<Option target="Cub3d"/>
 		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/srcs/player_utilities/initialize_player.c">
+			<Option target="Cub3d"/>
+		</Unit>
 		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -21,6 +21,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/map_utilities.c" "/Users/asbai-el/CLionProjects/Cub3d/cmake-build-debug/CMakeFiles/Cub3d.dir/srcs/parsing/map_utilities.c.o"
   "/Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/parsing.c" "/Users/asbai-el/CLionProjects/Cub3d/cmake-build-debug/CMakeFiles/Cub3d.dir/srcs/parsing/parsing.c.o"
   "/Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/utils.c" "/Users/asbai-el/CLionProjects/Cub3d/cmake-build-debug/CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.o"
+  "/Users/asbai-el/CLionProjects/Cub3d/srcs/player_utilities/initialize_player.c" "/Users/asbai-el/CLionProjects/Cub3d/cmake-build-debug/CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

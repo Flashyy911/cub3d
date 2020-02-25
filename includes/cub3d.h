@@ -15,8 +15,8 @@
 
 typedef struct      s_point
 {
-    float x;
-    float y;
+    double x;
+    double y;
 }                   t_point;
 
 typedef struct		s_resolution
@@ -79,5 +79,7 @@ void fill_map(t_config *game_conf,char *line, int fd_cub);
 void    ft_get_RGB(char *line, t_cfcolor *game_conf);
 void    check_line_char(char c, char *line, t_config *game_conf);
 void free_struct(t_config *game_conf);
+int ft_is_valid(char c);
+void ini_player(t_config *config);
 
 #endif //CUB3D_CUB3D_H

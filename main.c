@@ -6,7 +6,7 @@
 /*   By: asbai-el <asbai-el@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 19:18:42 by asbai-el          #+#    #+#             */
-/*   Updated: 2020/02/25 20:13:55 by asbai-el         ###   ########.fr       */
+/*   Updated: 2020/02/25 20:38:47 by asbai-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "cub3d.h"
@@ -16,6 +16,23 @@ int main(int argc, char **argv)
 	t_config game_conf;
 	argc = 0;
 	game_conf = ft_parse(argv[1]);
+	ini_player(&game_conf);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	printf("R %d %d\n", game_conf.resl.width, game_conf.resl.height);
 	printf("NO %s\n", game_conf.no_path);

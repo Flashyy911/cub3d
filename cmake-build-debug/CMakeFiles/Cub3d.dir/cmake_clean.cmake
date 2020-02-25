@@ -16,6 +16,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Cub3d.dir/srcs/parsing/map_utilities.c.o"
   "CMakeFiles/Cub3d.dir/srcs/parsing/parsing.c.o"
   "CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.o"
+  "CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.o"
   "Cub3d"
   "Cub3d.pdb"
 )

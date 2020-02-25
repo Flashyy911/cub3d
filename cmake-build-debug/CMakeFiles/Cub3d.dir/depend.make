@@ -60,3 +60,8 @@ CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.o: ../includes/get_next_line.h
 CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.o: ../includes/libft.h
 CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.o: ../srcs/parsing/utils.c
 
+CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.o: ../includes/cub3d.h
+CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.o: ../includes/get_next_line.h
+CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.o: ../includes/libft.h
+CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.o: ../srcs/player_utilities/initialize_player.c
+

@@ -582,6 +582,33 @@ srcs/parsing/utils.c.s:
 	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.s
 .PHONY : srcs/parsing/utils.c.s
 
+srcs/player_utilities/initialize_player.o: srcs/player_utilities/initialize_player.c.o
+
+.PHONY : srcs/player_utilities/initialize_player.o
+
+# target to build an object file
+srcs/player_utilities/initialize_player.c.o:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.o
+.PHONY : srcs/player_utilities/initialize_player.c.o
+
+srcs/player_utilities/initialize_player.i: srcs/player_utilities/initialize_player.c.i
+
+.PHONY : srcs/player_utilities/initialize_player.i
+
+# target to preprocess a source file
+srcs/player_utilities/initialize_player.c.i:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.i
+.PHONY : srcs/player_utilities/initialize_player.c.i
+
+srcs/player_utilities/initialize_player.s: srcs/player_utilities/initialize_player.c.s
+
+.PHONY : srcs/player_utilities/initialize_player.s
+
+# target to generate assembly for a file
+srcs/player_utilities/initialize_player.c.s:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.s
+.PHONY : srcs/player_utilities/initialize_player.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -642,6 +669,9 @@ help:
 	@echo "... srcs/parsing/utils.o"
 	@echo "... srcs/parsing/utils.i"
 	@echo "... srcs/parsing/utils.s"
+	@echo "... srcs/player_utilities/initialize_player.o"
+	@echo "... srcs/player_utilities/initialize_player.i"
+	@echo "... srcs/player_utilities/initialize_player.s"
 .PHONY : help
 
 

@@ -109,16 +109,37 @@
 		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/libft/ft_isspace.c">
 			<Option target="Cub3d"/>
 		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/libft/ft_putchar_fd.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/libft/ft_putendl_fd.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/libft/ft_putstr_fd.c">
+			<Option target="Cub3d"/>
+		</Unit>
 		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/libft/ft_strncmp.c">
 			<Option target="Cub3d"/>
 		</Unit>
 		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/main.c">
 			<Option target="Cub3d"/>
 		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/srcs/error_handling/free_struct.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/srcs/error_handling/put_error.c">
+			<Option target="Cub3d"/>
+		</Unit>
 		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/filling_utilities.c">
 			<Option target="Cub3d"/>
 		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/map_utilities.c">
+			<Option target="Cub3d"/>
+		</Unit>
 		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/parsing.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/utils.c">
 			<Option target="Cub3d"/>
 		</Unit>
 		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/CMakeLists.txt">

@@ -3,6 +3,8 @@
 //
 #include "cub3d.h"
 
+
+
 void ft_get_resolution(char *line, t_config *game_conf)
 {
     int i;
@@ -39,6 +41,7 @@ char    *ft_get_path(char *line, t_config *game_conf)
         i++;
     return (ft_strdup((line + i)));
 }
+
 void    ft_get_RGB(char *line, t_cfcolor *color)
 {
     int i;

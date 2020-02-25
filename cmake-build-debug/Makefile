@@ -285,6 +285,87 @@ libft/ft_isspace.c.s:
 	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/libft/ft_isspace.c.s
 .PHONY : libft/ft_isspace.c.s
 
+libft/ft_putchar_fd.o: libft/ft_putchar_fd.c.o
+
+.PHONY : libft/ft_putchar_fd.o
+
+# target to build an object file
+libft/ft_putchar_fd.c.o:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/libft/ft_putchar_fd.c.o
+.PHONY : libft/ft_putchar_fd.c.o
+
+libft/ft_putchar_fd.i: libft/ft_putchar_fd.c.i
+
+.PHONY : libft/ft_putchar_fd.i
+
+# target to preprocess a source file
+libft/ft_putchar_fd.c.i:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/libft/ft_putchar_fd.c.i
+.PHONY : libft/ft_putchar_fd.c.i
+
+libft/ft_putchar_fd.s: libft/ft_putchar_fd.c.s
+
+.PHONY : libft/ft_putchar_fd.s
+
+# target to generate assembly for a file
+libft/ft_putchar_fd.c.s:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/libft/ft_putchar_fd.c.s
+.PHONY : libft/ft_putchar_fd.c.s
+
+libft/ft_putendl_fd.o: libft/ft_putendl_fd.c.o
+
+.PHONY : libft/ft_putendl_fd.o
+
+# target to build an object file
+libft/ft_putendl_fd.c.o:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/libft/ft_putendl_fd.c.o
+.PHONY : libft/ft_putendl_fd.c.o
+
+libft/ft_putendl_fd.i: libft/ft_putendl_fd.c.i
+
+.PHONY : libft/ft_putendl_fd.i
+
+# target to preprocess a source file
+libft/ft_putendl_fd.c.i:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/libft/ft_putendl_fd.c.i
+.PHONY : libft/ft_putendl_fd.c.i
+
+libft/ft_putendl_fd.s: libft/ft_putendl_fd.c.s
+
+.PHONY : libft/ft_putendl_fd.s
+
+# target to generate assembly for a file
+libft/ft_putendl_fd.c.s:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/libft/ft_putendl_fd.c.s
+.PHONY : libft/ft_putendl_fd.c.s
+
+libft/ft_putstr_fd.o: libft/ft_putstr_fd.c.o
+
+.PHONY : libft/ft_putstr_fd.o
+
+# target to build an object file
+libft/ft_putstr_fd.c.o:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/libft/ft_putstr_fd.c.o
+.PHONY : libft/ft_putstr_fd.c.o
+
+libft/ft_putstr_fd.i: libft/ft_putstr_fd.c.i
+
+.PHONY : libft/ft_putstr_fd.i
+
+# target to preprocess a source file
+libft/ft_putstr_fd.c.i:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/libft/ft_putstr_fd.c.i
+.PHONY : libft/ft_putstr_fd.c.i
+
+libft/ft_putstr_fd.s: libft/ft_putstr_fd.c.s
+
+.PHONY : libft/ft_putstr_fd.s
+
+# target to generate assembly for a file
+libft/ft_putstr_fd.c.s:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/libft/ft_putstr_fd.c.s
+.PHONY : libft/ft_putstr_fd.c.s
+
 libft/ft_strncmp.o: libft/ft_strncmp.c.o
 
 .PHONY : libft/ft_strncmp.o
@@ -339,6 +420,60 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/main.c.s
 .PHONY : main.c.s
 
+srcs/error_handling/free_struct.o: srcs/error_handling/free_struct.c.o
+
+.PHONY : srcs/error_handling/free_struct.o
+
+# target to build an object file
+srcs/error_handling/free_struct.c.o:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/error_handling/free_struct.c.o
+.PHONY : srcs/error_handling/free_struct.c.o
+
+srcs/error_handling/free_struct.i: srcs/error_handling/free_struct.c.i
+
+.PHONY : srcs/error_handling/free_struct.i
+
+# target to preprocess a source file
+srcs/error_handling/free_struct.c.i:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/error_handling/free_struct.c.i
+.PHONY : srcs/error_handling/free_struct.c.i
+
+srcs/error_handling/free_struct.s: srcs/error_handling/free_struct.c.s
+
+.PHONY : srcs/error_handling/free_struct.s
+
+# target to generate assembly for a file
+srcs/error_handling/free_struct.c.s:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/error_handling/free_struct.c.s
+.PHONY : srcs/error_handling/free_struct.c.s
+
+srcs/error_handling/put_error.o: srcs/error_handling/put_error.c.o
+
+.PHONY : srcs/error_handling/put_error.o
+
+# target to build an object file
+srcs/error_handling/put_error.c.o:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/error_handling/put_error.c.o
+.PHONY : srcs/error_handling/put_error.c.o
+
+srcs/error_handling/put_error.i: srcs/error_handling/put_error.c.i
+
+.PHONY : srcs/error_handling/put_error.i
+
+# target to preprocess a source file
+srcs/error_handling/put_error.c.i:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/error_handling/put_error.c.i
+.PHONY : srcs/error_handling/put_error.c.i
+
+srcs/error_handling/put_error.s: srcs/error_handling/put_error.c.s
+
+.PHONY : srcs/error_handling/put_error.s
+
+# target to generate assembly for a file
+srcs/error_handling/put_error.c.s:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/error_handling/put_error.c.s
+.PHONY : srcs/error_handling/put_error.c.s
+
 srcs/parsing/filling_utilities.o: srcs/parsing/filling_utilities.c.o
 
 .PHONY : srcs/parsing/filling_utilities.o
@@ -365,6 +500,33 @@ srcs/parsing/filling_utilities.s: srcs/parsing/filling_utilities.c.s
 srcs/parsing/filling_utilities.c.s:
 	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/parsing/filling_utilities.c.s
 .PHONY : srcs/parsing/filling_utilities.c.s
+
+srcs/parsing/map_utilities.o: srcs/parsing/map_utilities.c.o
+
+.PHONY : srcs/parsing/map_utilities.o
+
+# target to build an object file
+srcs/parsing/map_utilities.c.o:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/parsing/map_utilities.c.o
+.PHONY : srcs/parsing/map_utilities.c.o
+
+srcs/parsing/map_utilities.i: srcs/parsing/map_utilities.c.i
+
+.PHONY : srcs/parsing/map_utilities.i
+
+# target to preprocess a source file
+srcs/parsing/map_utilities.c.i:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/parsing/map_utilities.c.i
+.PHONY : srcs/parsing/map_utilities.c.i
+
+srcs/parsing/map_utilities.s: srcs/parsing/map_utilities.c.s
+
+.PHONY : srcs/parsing/map_utilities.s
+
+# target to generate assembly for a file
+srcs/parsing/map_utilities.c.s:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/parsing/map_utilities.c.s
+.PHONY : srcs/parsing/map_utilities.c.s
 
 srcs/parsing/parsing.o: srcs/parsing/parsing.c.o
 
@@ -393,6 +555,33 @@ srcs/parsing/parsing.c.s:
 	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/parsing/parsing.c.s
 .PHONY : srcs/parsing/parsing.c.s
 
+srcs/parsing/utils.o: srcs/parsing/utils.c.o
+
+.PHONY : srcs/parsing/utils.o
+
+# target to build an object file
+srcs/parsing/utils.c.o:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.o
+.PHONY : srcs/parsing/utils.c.o
+
+srcs/parsing/utils.i: srcs/parsing/utils.c.i
+
+.PHONY : srcs/parsing/utils.i
+
+# target to preprocess a source file
+srcs/parsing/utils.c.i:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.i
+.PHONY : srcs/parsing/utils.c.i
+
+srcs/parsing/utils.s: srcs/parsing/utils.c.s
+
+.PHONY : srcs/parsing/utils.s
+
+# target to generate assembly for a file
+srcs/parsing/utils.c.s:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.s
+.PHONY : srcs/parsing/utils.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -420,18 +609,39 @@ help:
 	@echo "... libft/ft_isspace.o"
 	@echo "... libft/ft_isspace.i"
 	@echo "... libft/ft_isspace.s"
+	@echo "... libft/ft_putchar_fd.o"
+	@echo "... libft/ft_putchar_fd.i"
+	@echo "... libft/ft_putchar_fd.s"
+	@echo "... libft/ft_putendl_fd.o"
+	@echo "... libft/ft_putendl_fd.i"
+	@echo "... libft/ft_putendl_fd.s"
+	@echo "... libft/ft_putstr_fd.o"
+	@echo "... libft/ft_putstr_fd.i"
+	@echo "... libft/ft_putstr_fd.s"
 	@echo "... libft/ft_strncmp.o"
 	@echo "... libft/ft_strncmp.i"
 	@echo "... libft/ft_strncmp.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... srcs/error_handling/free_struct.o"
+	@echo "... srcs/error_handling/free_struct.i"
+	@echo "... srcs/error_handling/free_struct.s"
+	@echo "... srcs/error_handling/put_error.o"
+	@echo "... srcs/error_handling/put_error.i"
+	@echo "... srcs/error_handling/put_error.s"
 	@echo "... srcs/parsing/filling_utilities.o"
 	@echo "... srcs/parsing/filling_utilities.i"
 	@echo "... srcs/parsing/filling_utilities.s"
+	@echo "... srcs/parsing/map_utilities.o"
+	@echo "... srcs/parsing/map_utilities.i"
+	@echo "... srcs/parsing/map_utilities.s"
 	@echo "... srcs/parsing/parsing.o"
 	@echo "... srcs/parsing/parsing.i"
 	@echo "... srcs/parsing/parsing.s"
+	@echo "... srcs/parsing/utils.o"
+	@echo "... srcs/parsing/utils.i"
+	@echo "... srcs/parsing/utils.s"
 .PHONY : help
 
 

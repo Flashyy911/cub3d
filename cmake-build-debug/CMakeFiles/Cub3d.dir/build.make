@@ -187,6 +187,97 @@ CMakeFiles/Cub3d.dir/libft/ft_isalpha.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cub3d.dir/libft/ft_isalpha.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asbai-el/CLionProjects/Cub3d/libft/ft_isalpha.c -o CMakeFiles/Cub3d.dir/libft/ft_isalpha.c.s
 
+CMakeFiles/Cub3d.dir/libft/ft_putstr_fd.c.o: CMakeFiles/Cub3d.dir/flags.make
+CMakeFiles/Cub3d.dir/libft/ft_putstr_fd.c.o: ../libft/ft_putstr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asbai-el/CLionProjects/Cub3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Cub3d.dir/libft/ft_putstr_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cub3d.dir/libft/ft_putstr_fd.c.o   -c /Users/asbai-el/CLionProjects/Cub3d/libft/ft_putstr_fd.c
+
+CMakeFiles/Cub3d.dir/libft/ft_putstr_fd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cub3d.dir/libft/ft_putstr_fd.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asbai-el/CLionProjects/Cub3d/libft/ft_putstr_fd.c > CMakeFiles/Cub3d.dir/libft/ft_putstr_fd.c.i
+
+CMakeFiles/Cub3d.dir/libft/ft_putstr_fd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cub3d.dir/libft/ft_putstr_fd.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asbai-el/CLionProjects/Cub3d/libft/ft_putstr_fd.c -o CMakeFiles/Cub3d.dir/libft/ft_putstr_fd.c.s
+
+CMakeFiles/Cub3d.dir/libft/ft_putendl_fd.c.o: CMakeFiles/Cub3d.dir/flags.make
+CMakeFiles/Cub3d.dir/libft/ft_putendl_fd.c.o: ../libft/ft_putendl_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asbai-el/CLionProjects/Cub3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Cub3d.dir/libft/ft_putendl_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cub3d.dir/libft/ft_putendl_fd.c.o   -c /Users/asbai-el/CLionProjects/Cub3d/libft/ft_putendl_fd.c
+
+CMakeFiles/Cub3d.dir/libft/ft_putendl_fd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cub3d.dir/libft/ft_putendl_fd.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asbai-el/CLionProjects/Cub3d/libft/ft_putendl_fd.c > CMakeFiles/Cub3d.dir/libft/ft_putendl_fd.c.i
+
+CMakeFiles/Cub3d.dir/libft/ft_putendl_fd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cub3d.dir/libft/ft_putendl_fd.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asbai-el/CLionProjects/Cub3d/libft/ft_putendl_fd.c -o CMakeFiles/Cub3d.dir/libft/ft_putendl_fd.c.s
+
+CMakeFiles/Cub3d.dir/libft/ft_putchar_fd.c.o: CMakeFiles/Cub3d.dir/flags.make
+CMakeFiles/Cub3d.dir/libft/ft_putchar_fd.c.o: ../libft/ft_putchar_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asbai-el/CLionProjects/Cub3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Cub3d.dir/libft/ft_putchar_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cub3d.dir/libft/ft_putchar_fd.c.o   -c /Users/asbai-el/CLionProjects/Cub3d/libft/ft_putchar_fd.c
+
+CMakeFiles/Cub3d.dir/libft/ft_putchar_fd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cub3d.dir/libft/ft_putchar_fd.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asbai-el/CLionProjects/Cub3d/libft/ft_putchar_fd.c > CMakeFiles/Cub3d.dir/libft/ft_putchar_fd.c.i
+
+CMakeFiles/Cub3d.dir/libft/ft_putchar_fd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cub3d.dir/libft/ft_putchar_fd.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asbai-el/CLionProjects/Cub3d/libft/ft_putchar_fd.c -o CMakeFiles/Cub3d.dir/libft/ft_putchar_fd.c.s
+
+CMakeFiles/Cub3d.dir/srcs/error_handling/free_struct.c.o: CMakeFiles/Cub3d.dir/flags.make
+CMakeFiles/Cub3d.dir/srcs/error_handling/free_struct.c.o: ../srcs/error_handling/free_struct.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asbai-el/CLionProjects/Cub3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Cub3d.dir/srcs/error_handling/free_struct.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cub3d.dir/srcs/error_handling/free_struct.c.o   -c /Users/asbai-el/CLionProjects/Cub3d/srcs/error_handling/free_struct.c
+
+CMakeFiles/Cub3d.dir/srcs/error_handling/free_struct.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cub3d.dir/srcs/error_handling/free_struct.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asbai-el/CLionProjects/Cub3d/srcs/error_handling/free_struct.c > CMakeFiles/Cub3d.dir/srcs/error_handling/free_struct.c.i
+
+CMakeFiles/Cub3d.dir/srcs/error_handling/free_struct.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cub3d.dir/srcs/error_handling/free_struct.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asbai-el/CLionProjects/Cub3d/srcs/error_handling/free_struct.c -o CMakeFiles/Cub3d.dir/srcs/error_handling/free_struct.c.s
+
+CMakeFiles/Cub3d.dir/srcs/parsing/map_utilities.c.o: CMakeFiles/Cub3d.dir/flags.make
+CMakeFiles/Cub3d.dir/srcs/parsing/map_utilities.c.o: ../srcs/parsing/map_utilities.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asbai-el/CLionProjects/Cub3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/Cub3d.dir/srcs/parsing/map_utilities.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cub3d.dir/srcs/parsing/map_utilities.c.o   -c /Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/map_utilities.c
+
+CMakeFiles/Cub3d.dir/srcs/parsing/map_utilities.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cub3d.dir/srcs/parsing/map_utilities.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/map_utilities.c > CMakeFiles/Cub3d.dir/srcs/parsing/map_utilities.c.i
+
+CMakeFiles/Cub3d.dir/srcs/parsing/map_utilities.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cub3d.dir/srcs/parsing/map_utilities.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/map_utilities.c -o CMakeFiles/Cub3d.dir/srcs/parsing/map_utilities.c.s
+
+CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.o: CMakeFiles/Cub3d.dir/flags.make
+CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.o: ../srcs/parsing/utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asbai-el/CLionProjects/Cub3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.o   -c /Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/utils.c
+
+CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/utils.c > CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.i
+
+CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/utils.c -o CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.s
+
+CMakeFiles/Cub3d.dir/srcs/error_handling/put_error.c.o: CMakeFiles/Cub3d.dir/flags.make
+CMakeFiles/Cub3d.dir/srcs/error_handling/put_error.c.o: ../srcs/error_handling/put_error.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asbai-el/CLionProjects/Cub3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/Cub3d.dir/srcs/error_handling/put_error.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cub3d.dir/srcs/error_handling/put_error.c.o   -c /Users/asbai-el/CLionProjects/Cub3d/srcs/error_handling/put_error.c
+
+CMakeFiles/Cub3d.dir/srcs/error_handling/put_error.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cub3d.dir/srcs/error_handling/put_error.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asbai-el/CLionProjects/Cub3d/srcs/error_handling/put_error.c > CMakeFiles/Cub3d.dir/srcs/error_handling/put_error.c.i
+
+CMakeFiles/Cub3d.dir/srcs/error_handling/put_error.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cub3d.dir/srcs/error_handling/put_error.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asbai-el/CLionProjects/Cub3d/srcs/error_handling/put_error.c -o CMakeFiles/Cub3d.dir/srcs/error_handling/put_error.c.s
+
 # Object files for target Cub3d
 Cub3d_OBJECTS = \
 "CMakeFiles/Cub3d.dir/main.c.o" \
@@ -198,7 +289,14 @@ Cub3d_OBJECTS = \
 "CMakeFiles/Cub3d.dir/libft/ft_atoi.c.o" \
 "CMakeFiles/Cub3d.dir/libft/ft_isdigit.c.o" \
 "CMakeFiles/Cub3d.dir/libft/ft_isspace.c.o" \
-"CMakeFiles/Cub3d.dir/libft/ft_isalpha.c.o"
+"CMakeFiles/Cub3d.dir/libft/ft_isalpha.c.o" \
+"CMakeFiles/Cub3d.dir/libft/ft_putstr_fd.c.o" \
+"CMakeFiles/Cub3d.dir/libft/ft_putendl_fd.c.o" \
+"CMakeFiles/Cub3d.dir/libft/ft_putchar_fd.c.o" \
+"CMakeFiles/Cub3d.dir/srcs/error_handling/free_struct.c.o" \
+"CMakeFiles/Cub3d.dir/srcs/parsing/map_utilities.c.o" \
+"CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.o" \
+"CMakeFiles/Cub3d.dir/srcs/error_handling/put_error.c.o"
 
 # External object files for target Cub3d
 Cub3d_EXTERNAL_OBJECTS =
@@ -213,9 +311,16 @@ Cub3d: CMakeFiles/Cub3d.dir/libft/ft_atoi.c.o
 Cub3d: CMakeFiles/Cub3d.dir/libft/ft_isdigit.c.o
 Cub3d: CMakeFiles/Cub3d.dir/libft/ft_isspace.c.o
 Cub3d: CMakeFiles/Cub3d.dir/libft/ft_isalpha.c.o
+Cub3d: CMakeFiles/Cub3d.dir/libft/ft_putstr_fd.c.o
+Cub3d: CMakeFiles/Cub3d.dir/libft/ft_putendl_fd.c.o
+Cub3d: CMakeFiles/Cub3d.dir/libft/ft_putchar_fd.c.o
+Cub3d: CMakeFiles/Cub3d.dir/srcs/error_handling/free_struct.c.o
+Cub3d: CMakeFiles/Cub3d.dir/srcs/parsing/map_utilities.c.o
+Cub3d: CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.o
+Cub3d: CMakeFiles/Cub3d.dir/srcs/error_handling/put_error.c.o
 Cub3d: CMakeFiles/Cub3d.dir/build.make
 Cub3d: CMakeFiles/Cub3d.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/asbai-el/CLionProjects/Cub3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable Cub3d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/asbai-el/CLionProjects/Cub3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking C executable Cub3d"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Cub3d.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

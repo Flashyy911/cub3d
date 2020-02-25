@@ -15,8 +15,12 @@ stdlib.h
 -
 math.h
 -
+fcntl.h
+-
 libft.h
 ../includes/libft.h
+mlx.h
+../includes/mlx.h
 get_next_line.h
 ../includes/get_next_line.h
 
@@ -34,9 +38,9 @@ stddef.h
 unistd.h
 -
 
-/Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/parsing.c
+/Users/asbai-el/CLionProjects/Cub3d/main.c
 cub3d.h
-/Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/cub3d.h
-fcntl.h
--
+/Users/asbai-el/CLionProjects/Cub3d/cub3d.h
+
+/Users/asbai-el/CLionProjects/Cub3d/srcs/error_handling/put_error.c
 

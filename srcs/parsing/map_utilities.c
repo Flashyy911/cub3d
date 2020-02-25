@@ -23,10 +23,10 @@ void    set_map(t_config *game_conf,char *line, int fd_cub)
         lines_count++;
     }
     close(fd_cub);
-    game_conf->map_arr = malloc(lines_count * sizeof(int*));
+    game_conf->map = malloc(lines_count * sizeof(int*));
     i = 0;
     while(i < lines_count)
-        game_conf->map_arr[i++] = malloc(columns_count * sizeof(int));
+        game_conf->map[i++] = malloc(columns_count * sizeof(int));
     game_conf->columns_count = columns_count;
     game_conf->lines_count = lines_count;
     fill_map(game_conf, line, fd_cub);
@@ -59,9 +59,9 @@ void fill_map(t_config *game_conf,char *line, int fd_cub)
         while(j < ft_strlen(line))
         {
             if (ft_is_valid(*(line + j)) && ft_isdigit(*(line + j)))
-                game_conf->map_arr[i][columns_count_check++] = *(line + j) - '0';
+                game_conf->map[i][columns_count_check++] = *(line + j) - '0';
             else if (ft_is_valid(*(line + j)))
-                game_conf->map_arr[i][columns_count_check++] = *(line + j);
+                game_conf->map[i][columns_count_check++] = *(line + j);
             if (game_conf->spawn && ft_is_valid(*(line + j)) == 1)
                 exit(1);
             if (ft_is_valid(*(line + j)) == 1)

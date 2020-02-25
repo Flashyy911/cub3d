@@ -13,8 +13,8 @@ void free_struct(t_config *game_conf)
     free(game_conf->ea_path);
     free(game_conf->sprite_path);
     while (i < game_conf->lines_count )
-            free(game_conf->map_arr[i++]);
-    free(game_conf->map_arr);
+            free(game_conf->map[i++]);
+    free(game_conf->map);
     exit(1);
 }
 

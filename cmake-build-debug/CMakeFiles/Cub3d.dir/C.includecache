@@ -38,9 +38,15 @@ stddef.h
 unistd.h
 -
 
-/Users/asbai-el/CLionProjects/Cub3d/main.c
+/Users/asbai-el/CLionProjects/Cub3d/srcs/error_handling/free_struct.c
 cub3d.h
-/Users/asbai-el/CLionProjects/Cub3d/cub3d.h
+/Users/asbai-el/CLionProjects/Cub3d/srcs/error_handling/cub3d.h
 
-/Users/asbai-el/CLionProjects/Cub3d/srcs/error_handling/put_error.c
+/Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/map_utilities.c
+cub3d.h
+/Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/cub3d.h
+
+/Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/utils.c
+cub3d.h
+/Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/cub3d.h
 

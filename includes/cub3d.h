@@ -60,12 +60,11 @@ typedef struct		s_config
     t_cfcolor       rgb;
     void			*ptr;
     void			*win;
-    t_map			*map;
     t_player        player;
     char *path;
     int columns_count;
     int lines_count;
-    int **map_arr;
+    int **map;
 }					t_config;
 
 void        initialize_conf(t_config *conf);

@@ -6,7 +6,7 @@
 /*   By: asbai-el <asbai-el@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 19:18:42 by asbai-el          #+#    #+#             */
-/*   Updated: 2020/02/25 20:12:45 by asbai-el         ###   ########.fr       */
+/*   Updated: 2020/02/25 20:13:55 by asbai-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "cub3d.h"
@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 		j = 0;
 		while (j < game_conf.columns_count)
 		{
-			printf("%d ", game_conf.map_arr[i][j]);
+			printf("%d ", game_conf.map[i][j]);
 			j++;
 		}
 		printf("\n");

@@ -36,7 +36,7 @@ void fill_conf_infos(t_config *game_conf)
     while (gnl_return > 0)
     {
         gnl_return = get_next_line(fd_cub, &line);
-        if (ft_isdigit(*line))
+        if (ft_isdigit(*line) || *line == ' ')
         {
             free(line);
             break;

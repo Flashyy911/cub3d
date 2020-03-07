@@ -21,7 +21,7 @@ void ft_get_resolution(char *line, t_config *game_conf)
         i++;
     if (!ft_isdigit(*(line + i)))
         exit(1);
-    game_conf->resl.height = ft_atoi(line + i);
+    game_conf->resl.width = ft_atoi(line + i);
     while (ft_isdigit(*(line + i)))
         i++;
     if (!ft_isspace(*(line + i)))
@@ -30,7 +30,7 @@ void ft_get_resolution(char *line, t_config *game_conf)
         i++;
     if (!ft_isdigit(*(line + i)))
         exit(1);
-    game_conf->resl.width = ft_atoi(line + i);
+    game_conf->resl.height = ft_atoi(line + i);
     while (ft_isdigit(*(line + i)) || ft_isspace(*(line + i)))
         i++;
     if (*(line + i) != '\0')

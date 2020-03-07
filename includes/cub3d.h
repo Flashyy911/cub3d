@@ -61,6 +61,7 @@ typedef struct		s_config
     void			*ptr;
     void			*win;
     t_player        player;
+    char            **array;
     char *path;
     int columns_count;
     int lines_count;
@@ -72,6 +73,8 @@ t_config    ft_parse(char *path);
 
 void fill_conf_infos(t_config *game_conf);
 void    set_map(t_config *game_conf,char *line, int fd_cub);
+char    **ft_free(char **str);
+void check_map(t_config *game_conf);
 void    ft_fill_conf(char *line, t_config *game_conf);
 void    ft_get_resolution(char *line, t_config *game_conf);
 char    *ft_get_path(char *line, t_config *game_conf);
@@ -81,5 +84,5 @@ void    check_line_char(char c, char *line, t_config *game_conf);
 void free_struct(t_config *game_conf);
 int ft_is_valid(char c);
 void ini_player(t_config *config);
-
+char      **ft_realloc(char **arr, char *line);
 #endif //CUB3D_CUB3D_H

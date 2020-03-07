@@ -6,7 +6,7 @@
 /*   By: asbai-el <asbai-el@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 20:38:50 by asbai-el          #+#    #+#             */
-/*   Updated: 2020/02/25 22:04:15 by asbai-el         ###   ########.fr       */
+/*   Updated: 2020/02/26 21:06:58 by asbai-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,17 +67,17 @@ void ini_player(t_config *config)
 
 
 	i = 0;
-	while (i < config->lines_count)
+	while (config->array[i])
 	{
 		j = 0;
-		while (j < config->columns_count)
+		while (config->array[i][j])
 		{
-			if (ft_is_valid(config->map[i][j]) == 1)
+			if (ft_is_valid(config->array[i][j]) == 1)
 			{
-				config->player.pos.x = j;
-				config->player.pos.y = i;
-				ini_dir(config->map[i][j], &config->player);
-				ini_plane(config->map[i][j], &config->player);
+				config->player.pos.x = j + 0.5;
+				config->player.pos.y = i + 0.5;
+				ini_dir(config->array[i][j], &config->player);
+				ini_plane(config->array[i][j], &config->player);
 				return ;
 			}
 			j++;

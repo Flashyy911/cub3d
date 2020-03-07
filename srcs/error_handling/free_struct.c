@@ -9,6 +9,7 @@ void free_struct(t_config *game_conf)
     int i = 0;
 
     free(game_conf->no_path);
+    free(game_conf->so_path);
     free(game_conf->we_path);
     free(game_conf->ea_path);
     free(game_conf->sprite_path);

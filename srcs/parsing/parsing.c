@@ -47,16 +47,6 @@ void fill_conf_infos(t_config *game_conf)
     set_map(game_conf, line, fd_cub);
 }
 
-void    check_line_char(char c, char *line, t_config *game_conf)
-{
-    while (*line)
-    {
-        if (*line != c && *line != ' ')
-            exit (1);
-        line++;
-    }
-}
-
 void    ft_fill_conf(char *line, t_config *game_conf)
 {
     if (ft_strncmp("R ", line, 2) == 0)

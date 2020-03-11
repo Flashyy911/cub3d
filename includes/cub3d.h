@@ -12,7 +12,18 @@
 
 #ifndef CUB3D_CUB3D_H
 #define CUB3D_CUB3D_H
-
+#define texWidth 64
+#define texHeight 64
+# define K_W 13
+# define K_A 0
+# define K_S 1
+# define K_D 2
+# define LEFT_ARROW 124
+# define RIGHT_ARROW 123
+# define TAB 48
+# define ESC 53
+# define T_WIDTH 64
+# define T_HEIGHT 64
 typedef struct      s_point
 {
     double x;
@@ -46,26 +57,54 @@ typedef struct      s_player
     t_point plane;
 }                   t_player;
 
+typedef struct      s_env
+{
+    int key[300];
+}                   t_env;
+
+typedef struct		s_img
+{
+	int				bpp;
+	int				sl;
+	int				e;
+	int				*data;
+	void			*ptr;
+	int				width;
+	int				height;
+}					t_img;
+
+typedef struct	s_sprite
+{
+	double x;
+	double y;
+}				t_sprite;
+
 typedef struct		s_config
 {
     t_resolution	resl;
     int				spawn;
     char			*no_path;
-    char			*so_path;
-    char			*we_path;
-    char			*ea_path;
-    char			*sprite_path;
-    t_cfcolor		celling_colors;
-    t_cfcolor		floor_colors;
-    t_cfcolor       rgb;
-    void			*ptr;
-    void			*win;
-    t_player        player;
-    char            **array;
+	char			*so_path;
+	char			*we_path;
+	char			*ea_path;
+	char			*sprite_path;
+	t_cfcolor		celling_colors;
+	t_cfcolor		floor_colors;
+	t_cfcolor       rgb;
+	void			*ptr;
+	void			*win;
+	t_img			im;
+	t_img			img[5];
+	t_player        player;
+	t_env           env;
+	char            **array;
+	int				n_sprites;
+	t_sprite		*sprites;
+	double			*distance_sprites;
+	int				*index_sprites;
+	double			*z_buffer;
     char *path;
-    int columns_count;
     int lines_count;
-    int **map;
 }					t_config;
 
 void        initialize_conf(t_config *conf);
@@ -85,4 +124,7 @@ void free_struct(t_config *game_conf);
 int ft_is_valid(char c);
 void ini_player(t_config *config);
 char      **ft_realloc(char **arr, char *line);
+void		sort_sprites(int n_sprites, double *d_sprite, int *i_sprite);
+void ini_sprite(t_config *config);
+
 #endif //CUB3D_CUB3D_H

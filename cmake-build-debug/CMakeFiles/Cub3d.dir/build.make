@@ -291,6 +291,32 @@ CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asbai-el/CLionProjects/Cub3d/srcs/player_utilities/initialize_player.c -o CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.s
 
+CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.o: CMakeFiles/Cub3d.dir/flags.make
+CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.o: ../srcs/sprite/initialize_sprite.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asbai-el/CLionProjects/Cub3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.o   -c /Users/asbai-el/CLionProjects/Cub3d/srcs/sprite/initialize_sprite.c
+
+CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asbai-el/CLionProjects/Cub3d/srcs/sprite/initialize_sprite.c > CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.i
+
+CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asbai-el/CLionProjects/Cub3d/srcs/sprite/initialize_sprite.c -o CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.s
+
+CMakeFiles/Cub3d.dir/srcs/sprite/sort_sprites.c.o: CMakeFiles/Cub3d.dir/flags.make
+CMakeFiles/Cub3d.dir/srcs/sprite/sort_sprites.c.o: ../srcs/sprite/sort_sprites.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/asbai-el/CLionProjects/Cub3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/Cub3d.dir/srcs/sprite/sort_sprites.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Cub3d.dir/srcs/sprite/sort_sprites.c.o   -c /Users/asbai-el/CLionProjects/Cub3d/srcs/sprite/sort_sprites.c
+
+CMakeFiles/Cub3d.dir/srcs/sprite/sort_sprites.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cub3d.dir/srcs/sprite/sort_sprites.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/asbai-el/CLionProjects/Cub3d/srcs/sprite/sort_sprites.c > CMakeFiles/Cub3d.dir/srcs/sprite/sort_sprites.c.i
+
+CMakeFiles/Cub3d.dir/srcs/sprite/sort_sprites.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cub3d.dir/srcs/sprite/sort_sprites.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/asbai-el/CLionProjects/Cub3d/srcs/sprite/sort_sprites.c -o CMakeFiles/Cub3d.dir/srcs/sprite/sort_sprites.c.s
+
 # Object files for target Cub3d
 Cub3d_OBJECTS = \
 "CMakeFiles/Cub3d.dir/main.c.o" \
@@ -310,7 +336,9 @@ Cub3d_OBJECTS = \
 "CMakeFiles/Cub3d.dir/srcs/parsing/map_utilities.c.o" \
 "CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.o" \
 "CMakeFiles/Cub3d.dir/srcs/error_handling/put_error.c.o" \
-"CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.o"
+"CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.o" \
+"CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.o" \
+"CMakeFiles/Cub3d.dir/srcs/sprite/sort_sprites.c.o"
 
 # External object files for target Cub3d
 Cub3d_EXTERNAL_OBJECTS =
@@ -333,9 +361,11 @@ Cub3d: CMakeFiles/Cub3d.dir/srcs/parsing/map_utilities.c.o
 Cub3d: CMakeFiles/Cub3d.dir/srcs/parsing/utils.c.o
 Cub3d: CMakeFiles/Cub3d.dir/srcs/error_handling/put_error.c.o
 Cub3d: CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.o
+Cub3d: CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.o
+Cub3d: CMakeFiles/Cub3d.dir/srcs/sprite/sort_sprites.c.o
 Cub3d: CMakeFiles/Cub3d.dir/build.make
 Cub3d: CMakeFiles/Cub3d.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/asbai-el/CLionProjects/Cub3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking C executable Cub3d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/asbai-el/CLionProjects/Cub3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking C executable Cub3d"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Cub3d.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

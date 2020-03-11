@@ -13,14 +13,17 @@ void    set_map(t_config *game_conf,char *line, int fd_cub)
     game_conf->array = malloc(2 * sizeof(char*));
     game_conf->array[0] = ft_strdup(line);
     game_conf->array[1] = NULL;
+    line = NULL;
     while (get_next_line(fd_cub, &line) > 0)
     {
         tmp = game_conf->array;
         game_conf->array = ft_realloc(game_conf->array, line);
         ft_free(tmp);
         free(line);
+        line = NULL;
         game_conf->lines_count++;
     }
+    free(line);
     game_conf->array = ft_realloc(game_conf->array, line);
     if (game_conf->lines_count < 3)
         exit(1);

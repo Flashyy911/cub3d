@@ -65,3 +65,10 @@ CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.o
  ../includes/get_next_line.h
  ../includes/libft.h
  /Users/asbai-el/CLionProjects/Cub3d/srcs/player_utilities/initialize_player.c
+CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.o
+ ../includes/cub3d.h
+ ../includes/get_next_line.h
+ ../includes/libft.h
+ /Users/asbai-el/CLionProjects/Cub3d/srcs/sprite/initialize_sprite.c
+CMakeFiles/Cub3d.dir/srcs/sprite/sort_sprites.c.o
+ /Users/asbai-el/CLionProjects/Cub3d/srcs/sprite/sort_sprites.c

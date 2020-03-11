@@ -65,3 +65,10 @@ CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.o: ../includes/ge
 CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.o: ../includes/libft.h
 CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.o: ../srcs/player_utilities/initialize_player.c
 
+CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.o: ../includes/cub3d.h
+CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.o: ../includes/get_next_line.h
+CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.o: ../includes/libft.h
+CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.o: ../srcs/sprite/initialize_sprite.c
+
+CMakeFiles/Cub3d.dir/srcs/sprite/sort_sprites.c.o: ../srcs/sprite/sort_sprites.c
+

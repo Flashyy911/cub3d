@@ -609,6 +609,60 @@ srcs/player_utilities/initialize_player.c.s:
 	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/player_utilities/initialize_player.c.s
 .PHONY : srcs/player_utilities/initialize_player.c.s
 
+srcs/sprite/initialize_sprite.o: srcs/sprite/initialize_sprite.c.o
+
+.PHONY : srcs/sprite/initialize_sprite.o
+
+# target to build an object file
+srcs/sprite/initialize_sprite.c.o:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.o
+.PHONY : srcs/sprite/initialize_sprite.c.o
+
+srcs/sprite/initialize_sprite.i: srcs/sprite/initialize_sprite.c.i
+
+.PHONY : srcs/sprite/initialize_sprite.i
+
+# target to preprocess a source file
+srcs/sprite/initialize_sprite.c.i:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.i
+.PHONY : srcs/sprite/initialize_sprite.c.i
+
+srcs/sprite/initialize_sprite.s: srcs/sprite/initialize_sprite.c.s
+
+.PHONY : srcs/sprite/initialize_sprite.s
+
+# target to generate assembly for a file
+srcs/sprite/initialize_sprite.c.s:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/sprite/initialize_sprite.c.s
+.PHONY : srcs/sprite/initialize_sprite.c.s
+
+srcs/sprite/sort_sprites.o: srcs/sprite/sort_sprites.c.o
+
+.PHONY : srcs/sprite/sort_sprites.o
+
+# target to build an object file
+srcs/sprite/sort_sprites.c.o:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/sprite/sort_sprites.c.o
+.PHONY : srcs/sprite/sort_sprites.c.o
+
+srcs/sprite/sort_sprites.i: srcs/sprite/sort_sprites.c.i
+
+.PHONY : srcs/sprite/sort_sprites.i
+
+# target to preprocess a source file
+srcs/sprite/sort_sprites.c.i:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/sprite/sort_sprites.c.i
+.PHONY : srcs/sprite/sort_sprites.c.i
+
+srcs/sprite/sort_sprites.s: srcs/sprite/sort_sprites.c.s
+
+.PHONY : srcs/sprite/sort_sprites.s
+
+# target to generate assembly for a file
+srcs/sprite/sort_sprites.c.s:
+	$(MAKE) -f CMakeFiles/Cub3d.dir/build.make CMakeFiles/Cub3d.dir/srcs/sprite/sort_sprites.c.s
+.PHONY : srcs/sprite/sort_sprites.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -672,6 +726,12 @@ help:
 	@echo "... srcs/player_utilities/initialize_player.o"
 	@echo "... srcs/player_utilities/initialize_player.i"
 	@echo "... srcs/player_utilities/initialize_player.s"
+	@echo "... srcs/sprite/initialize_sprite.o"
+	@echo "... srcs/sprite/initialize_sprite.i"
+	@echo "... srcs/sprite/initialize_sprite.s"
+	@echo "... srcs/sprite/sort_sprites.o"
+	@echo "... srcs/sprite/sort_sprites.i"
+	@echo "... srcs/sprite/sort_sprites.s"
 .PHONY : help
 
 

@@ -14,4 +14,4 @@ add_executable(Cub3d includes/cub3d.h includes/get_next_line.h main.c gnl/get_ne
         libft/ft_putstr_fd.c
         libft/ft_putendl_fd.c
         libft/ft_putchar_fd.c
-        srcs/error_handling/free_struct.c srcs/parsing/map_utilities.c srcs/parsing/utils.c srcs/error_handling/put_error.c srcs/player_utilities/initialize_player.c)
+        srcs/error_handling/free_struct.c srcs/parsing/map_utilities.c srcs/parsing/utils.c srcs/error_handling/put_error.c srcs/player_utilities/initialize_player.c srcs/sprite/initialize_sprite.c srcs/sprite/sort_sprites.c)

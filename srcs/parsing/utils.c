@@ -35,9 +35,7 @@ void initialize_conf(t_config *conf)
     conf->player.plane.y =-1;
     conf->player.pos.x =-1;
     conf->player.pos.y =-1;
-    conf->map = NULL;
-    conf->columns_count = -1;
     conf->lines_count = -1;
     conf->path = NULL;
-    //conf->map = NULL;
+    conf->n_sprites = 0;
 }

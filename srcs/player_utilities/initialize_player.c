@@ -78,6 +78,7 @@ void ini_player(t_config *config)
 				config->player.pos.y = i + 0.5;
 				ini_dir(config->array[i][j], &config->player);
 				ini_plane(config->array[i][j], &config->player);
+				config->array[i][j] = '0';
 				return ;
 			}
 			j++;

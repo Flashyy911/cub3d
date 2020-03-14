@@ -372,7 +372,7 @@ int main(int argc, char **argv)
 	int j = 0;
 
 	ini_images(&game_conf);
-	//game(&game_conf);
-	//key_handler(&game_conf);
+	game(&game_conf);
+	key_handler(&game_conf);
 	free_struct(&game_conf);
 }

@@ -6,11 +6,11 @@
 /*   By: asbai-el <asbai-el@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 19:18:42 by asbai-el          #+#    #+#             */
-/*   Updated: 2020/02/27 15:49:39 by asbai-el         ###   ########.fr       */
+/*   Updated: 2021/06/25 21:41:07 by asbai-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3d.h"
+#include "includes/cub3d.h"
 
 void ini_game(t_config *config)
 {
@@ -62,82 +62,81 @@ void celling_floor(t_config *config)
 }
 void game(t_config *config)
 {
-	double posX = config->player.pos.x, posY = config->player.pos.y;
-	double dirX = config->player.dir.x, dirY = config->player.dir.y;
-	double planeX = config->player.plane.x, planeY = config->player.plane.y;
+
+    t_game game_conf;
+
+	game_conf.posX = config->player.pos.x;
+    game_conf.posY = config->player.pos.y;
+    game_conf.dirX = config->player.dir.x;
+    game_conf.dirY = config->player.dir.y;
+    game_conf.planeX = config->player.plane.x;
+    game_conf.planeY = config->player.plane.y;
 	int x = 0;
 	celling_floor(config);
 	while (x < config->resl.width)
 	{
 		//calculate ray position and direction
-		double cameraX = 2 * x / (double) (config->resl.width) - 1; //x-coordinate in camera space
-		double rayDirX = dirX + planeX * cameraX;
-		double rayDirY = dirY + planeY * cameraX;
+        game_conf.cameraX = 2 * x / (double) (config->resl.width) - 1; //x-coordinate in camera space
+        game_conf.rayDirX = game_conf.dirX + game_conf.planeX * game_conf.cameraX;
+        game_conf.rayDirY = game_conf.dirY + game_conf.planeY * game_conf.cameraX;
 
-		int mapX = (int) (posX);
-		int mapY = (int) (posY);
-
-		//length of ray from current position to next x or y-side
-		double sideDistX;
-		double sideDistY;
+		game_conf.mapX = (int) (game_conf.posX);
+		game_conf.mapY = (int) (game_conf.posY);
 
 		//length of ray from one x or y-side to next x or y-side
-		double deltaDistX = fabs(1 / rayDirX);
-		double deltaDistY = fabs(1 / rayDirY);
-		double perpWallDist;
+		game_conf.deltaDistX = fabs(1 / game_conf.rayDirX);
+		game_conf.deltaDistY = fabs(1 / game_conf.rayDirY);
 
-		//what direction to step in x or y-direction (either +1 or -1)
-		int stepX;
-		int stepY;
+		
 
-		int hit = 0; //was there a wall hit?
-		int side; //was a NS or a EW wall hit?
 
-		if (rayDirX < 0) {
-			stepX = -1;
-			sideDistX = (posX - mapX) * deltaDistX;
+		game_conf.hit = 0; //was there a wall game_conf.hit?
+
+		if (game_conf.rayDirX < 0) {
+			game_conf.stepX = -1;
+			game_conf.sideDistX = (game_conf.posX - game_conf.mapX) * game_conf.deltaDistX;
 		} else {
-			stepX = 1;
-			sideDistX = (mapX + 1.0 - posX) * deltaDistX;
+			game_conf.stepX = 1;
+			game_conf.sideDistX = (game_conf.mapX + 1.0 - game_conf.posX) * game_conf.deltaDistX;
 		}
-		if (rayDirY < 0) {
-			stepY = -1;
-			sideDistY = (posY - mapY) * deltaDistY;
+		if (game_conf.rayDirY < 0) {
+			game_conf.stepY = -1;
+			game_conf.sideDistY = (game_conf.posY - game_conf.mapY) * game_conf.deltaDistY;
 		} else {
-			stepY = 1;
-			sideDistY = (mapY + 1.0 - posY) * deltaDistY;
+			game_conf.stepY = 1;
+			game_conf.sideDistY = (game_conf.mapY + 1.0 - game_conf.posY) * game_conf.deltaDistY;
 		}
 
-		while (hit == 0) {
+		while (game_conf.hit == 0) {
 			//jump to next map square, OR in x-direction, OR in y-direction
-			if (sideDistX < sideDistY) {
-				sideDistX += deltaDistX;
-				mapX += stepX;
-				side = 0;
+			if (game_conf.sideDistX < game_conf.sideDistY) {
+				game_conf.sideDistX += game_conf.deltaDistX;
+				game_conf.mapX += game_conf.stepX;
+				game_conf.side = 0;
 			} else {
-				sideDistY += deltaDistY;
-				mapY += stepY;
-				side = 1;
+				game_conf.sideDistY += game_conf.deltaDistY;
+				game_conf.mapY += game_conf.stepY;
+				game_conf.side = 1;
 			}
-			//Check if ray has hit a wall
+			//Check if ray has game_conf.hit a wall
 
-			if (config->array[(mapY)][(mapX)] == '1')
-				hit = 1;
+			if (config->array[(game_conf.mapY)][(game_conf.mapX)] == '1')
+				game_conf.hit = 1;
 		}
 
-		if (side == 0) perpWallDist = (mapX - posX + (1 - stepX) / 2) / rayDirX;
-		else perpWallDist = (mapY - posY + (1 - stepY) / 2) / rayDirY;
+		if (game_conf.side == 0) game_conf.perpWallDist = (game_conf.mapX - game_conf.posX + (1 - game_conf.stepX) / 2) / game_conf.rayDirX;
+		else game_conf.perpWallDist = (game_conf.mapY - game_conf.posY + (1 - game_conf.stepY) / 2) / game_conf.rayDirY;
 
-		double wallX; //where exactly the wall was hit
-		if (side == 0) wallX = posY + perpWallDist * rayDirY;
-		else wallX = posX + perpWallDist * rayDirX;
+		double wallX; //where exactly the wall was game_conf.hit
+		if (game_conf.side == 0) wallX = game_conf.posY + game_conf.perpWallDist * game_conf.rayDirY;
+		else wallX = game_conf.posX + game_conf.perpWallDist * game_conf.rayDirX;
 		wallX -= floor((wallX));
 
 		int texX = (int) (wallX * (double) (config->img[0].width));
-		if (side == 0 && rayDirX > 0) texX = config->img[0].width - texX - 1;
-		if (side == 1 && rayDirY < 0) texX = config->img[0].width - texX - 1;
+		if (game_conf.side == 0 && game_conf.rayDirX > 0) texX = config->img[0].width - texX - 1;
+		if (game_conf.side == 1 && game_conf.rayDirY < 0) texX = config->img[0].width - texX - 1;
 
-		int lineHeight = (int) (config->resl.height / perpWallDist);
+		int lineHeight = (int) (config->resl.height / game_conf.perpWallDist);
 
 		//calculate lowest and highest pixel to fill in current stripe
 		int drawStart = -lineHeight / 2 + config->resl.height / 2;
@@ -149,7 +148,7 @@ void game(t_config *config)
 
 		double step = 1.0 * config->img[0].height / lineHeight;
 		double texPos = (drawStart - config->resl.height / 2 + lineHeight / 2) * step;
-		int color = get_direction(rayDirX, rayDirY, side);
+		int color = get_direction(game_conf.rayDirX, game_conf.rayDirY, game_conf.side);
 		while (drawStart < drawEnd)
 		{
 			//putpixel (x, drawStart, config, color);
@@ -169,13 +168,13 @@ void game(t_config *config)
 																							   config->img[3].width];
 			drawStart++;
 		}
-		config->z_buffer[x] = perpWallDist;
+		config->z_buffer[x] = game_conf.perpWallDist;
 		x++;
 	}
 	int i = 0;
 	while (i < config->n_sprites)
 	{
-		config->distance_sprites[i] = ((pow(posX - config->sprites[i].x, 2)) + (pow(posY - config->sprites[i].y, 2)));
+		config->distance_sprites[i] = ((pow(game_conf.posX - config->sprites[i].x, 2)) + (pow(game_conf.posY - config->sprites[i].y, 2)));
 		config->index_sprites[i] = i;
 		i++;
 	}
@@ -185,12 +184,12 @@ void game(t_config *config)
 
 	while (j < config->n_sprites)
 	{
-		double spriteX = config->sprites[config->index_sprites[j]].x - posX;
-		double spriteY = config->sprites[config->index_sprites[j]].y - posY;
+		double spriteX = config->sprites[config->index_sprites[j]].x - game_conf.posX;
+		double spriteY = config->sprites[config->index_sprites[j]].y - game_conf.posY;
 
-		double invDet = 1.0 / (planeX * dirY - dirX * planeY);
-		double transformX = invDet * (dirY * spriteX - dirX * spriteY);
-		double transformY = invDet * (-planeY * spriteX + planeX * spriteY); //this is actually the depth inside the screen, that what Z is in 3D
+		double invDet = 1.0 / (game_conf.planeX * game_conf.dirY - game_conf.dirX * game_conf.planeY);
+		double transformX = invDet * (game_conf.dirY * spriteX - game_conf.dirX * spriteY);
+		double transformY = invDet * (-game_conf.planeY * spriteX + game_conf.planeX * spriteY); //this is actually the depth inside the screen, that what Z is in 3D
 		int spriteScreenX = (int)((config->resl.width / 2) * (1 + transformX / transformY));
 		int spriteHeight = abs((int)(config->resl.height / (transformY)));
 
@@ -248,64 +247,83 @@ int key_released(int keyCode, t_env *env)
 	return (0);
 }
 
+void W_Key(t_config *config)
+{
+    if (config->array[(int)(config->player.pos.y)][(int)(config->player.pos.x + config->player.dir.x * 0.1)] == '0')
+        config->player.pos.x += config->player.dir.x * 0.1;
+    if (config->array[(int)(config->player.pos.y + config->player.dir.y * 0.1)][(int)(config->player.pos.x)] == '0')
+        config->player.pos.y += config->player.dir.y * 0.1;
+}
+
+
+void D_Key(t_config *config)
+{
+
+    if (config->array[(int)(config->player.pos.y)][(int)(config->player.pos.x + config->player.plane.x * 0.1)] == '0')
+        config->player.pos.x += config->player.plane.x * 0.1;
+    if (config->array[(int)(config->player.pos.y + config->player.plane.y * 0.1)][(int)(config->player.pos.x)] == '0')
+        config->player.pos.y += config->player.plane.y * 0.1;
+
+}
+
+void S_Key(t_config *config)
+{
+    if (config->array[(int)(config->player.pos.y)][(int)(config->player.pos.x - config->player.dir.x * 0.1)] == '0')
+        config->player.pos.x -= config->player.dir.x * 0.1;
+    if (config->array[(int)(config->player.pos.y - config->player.dir.y * 0.1)][(int)(config->player.pos.x)] == '0')
+        config->player.pos.y -= config->player.dir.y * 0.1;
+}
+
+
+void A_Key(t_config *config)
+{
+    if (config->array[(int)(config->player.pos.y)][(int)(config->player.pos.x - config->player.plane.x * 0.1)] == '0')
+        config->player.pos.x -= config->player.plane.x * 0.1;
+    if (config->array[(int)(config->player.pos.y - config->player.plane.y * 0.1)][(int)(config->player.pos.x)] == '0')
+        config->player.pos.y -= config->player.plane.y * 0.1;
+}
+
+void Left_Key(t_config *config)
+{
+    double rotSpeed;
+    rotSpeed = 0.1;
+    double oldDirX = config->player.dir.x;
+    config->player.dir.x = config->player.dir.x * cos(rotSpeed) - config->player.dir.y * sin(rotSpeed);
+    config->player.dir.y = oldDirX * sin(rotSpeed) + config->player.dir.y * cos(rotSpeed);
+    double oldPlaneX = config->player.plane.x;
+    config->player.plane.x = config->player.plane.x * cos(rotSpeed) - config->player.plane.y * sin(rotSpeed);
+    config->player.plane.y = oldPlaneX * sin(rotSpeed) + config->player.plane.y * cos(rotSpeed);
+}
+
+void Right_Key(t_config *config)
+{
+    double rotSpeed;
+    rotSpeed = -0.1;
+    double oldDirX = config->player.dir.x;
+    config->player.dir.x = config->player.dir.x * cos(rotSpeed) - config->player.dir.y * sin(rotSpeed);
+    config->player.dir.y = oldDirX * sin(rotSpeed) + config->player.dir.y * cos(rotSpeed);
+    double oldPlaneX = config->player.plane.x;
+    config->player.plane.x = config->player.plane.x * cos(rotSpeed) - config->player.plane.y * sin(rotSpeed);
+    config->player.plane.y = oldPlaneX * sin(rotSpeed) + config->player.plane.y * cos(rotSpeed);
+}
+
 int func(t_config *config)
 {
-	mlx_clear_window(config->ptr, config->win);
-	if (config->env.key[K_W])
-	{
-		if (config->array[(int)(config->player.pos.y)][(int)(config->player.pos.x + config->player.dir.x * 0.1)] == '0')
-			config->player.pos.x += config->player.dir.x * 0.1;
-		if (config->array[(int)(config->player.pos.y + config->player.dir.y * 0.1)][(int)(config->player.pos.x)] == '0')
-			config->player.pos.y += config->player.dir.y * 0.1;
-
-	}
-	if (config->env.key[K_D])
-	{
-
-		if (config->array[(int)(config->player.pos.y)][(int)(config->player.pos.x + config->player.plane.x * 0.1)] == '0')
-			config->player.pos.x += config->player.plane.x * 0.1;
-		if (config->array[(int)(config->player.pos.y + config->player.plane.y * 0.1)][(int)(config->player.pos.x)] == '0')
-			config->player.pos.y += config->player.plane.y * 0.1;
-	}
-	if (config->env.key[K_S])
-	{
-		if (config->array[(int)(config->player.pos.y)][(int)(config->player.pos.x - config->player.dir.x * 0.1)] == '0')
-			config->player.pos.x -= config->player.dir.x * 0.1;
-		if (config->array[(int)(config->player.pos.y - config->player.dir.y * 0.1)][(int)(config->player.pos.x)] == '0')
-			config->player.pos.y -= config->player.dir.y * 0.1;
-
-	}
-	if (config->env.key[K_A])
-	{
-		if (config->array[(int)(config->player.pos.y)][(int)(config->player.pos.x - config->player.plane.x * 0.1)] == '0')
-			config->player.pos.x -= config->player.plane.x * 0.1;
-		if (config->array[(int)(config->player.pos.y - config->player.plane.y * 0.1)][(int)(config->player.pos.x)] == '0')
-			config->player.pos.y -= config->player.plane.y * 0.1;
-	}
-	if (config->env.key[LEFT_ARROW])
-	{
-		double rotSpeed;
-		rotSpeed = 0.1;
-		double oldDirX = config->player.dir.x;
-		config->player.dir.x = config->player.dir.x * cos(rotSpeed) - config->player.dir.y * sin(rotSpeed);
-		config->player.dir.y = oldDirX * sin(rotSpeed) + config->player.dir.y * cos(rotSpeed);
-		double oldPlaneX = config->player.plane.x;
-		config->player.plane.x = config->player.plane.x * cos(rotSpeed) - config->player.plane.y * sin(rotSpeed);
-		config->player.plane.y = oldPlaneX * sin(rotSpeed) + config->player.plane.y * cos(rotSpeed);
-	}
-	if (config->env.key[RIGHT_ARROW])
-	{
-		double rotSpeed;
-		rotSpeed = -0.1;
-		double oldDirX = config->player.dir.x;
-		config->player.dir.x = config->player.dir.x * cos(rotSpeed) - config->player.dir.y * sin(rotSpeed);
-		config->player.dir.y = oldDirX * sin(rotSpeed) + config->player.dir.y * cos(rotSpeed);
-		double oldPlaneX = config->player.plane.x;
-		config->player.plane.x = config->player.plane.x * cos(rotSpeed) - config->player.plane.y * sin(rotSpeed);
-		config->player.plane.y = oldPlaneX * sin(rotSpeed) + config->player.plane.y * cos(rotSpeed);
-	}
-	game(config);
-	return (1);
+    mlx_clear_window(config->ptr, config->win);
+    if (config->env.key[K_W])
+        W_Key(config);
+    if (config->env.key[K_D])
+            D_Key(config);
+    if (config->env.key[K_S])
+        S_Key(config);
+    if (config->env.key[K_A])
+        A_Key(config);
+    if (config->env.key[LEFT_ARROW])
+        Left_Key(config);
+    if (config->env.key[RIGHT_ARROW])
+        Right_Key(config);
+    game(config);
+    return (1);
 }
 
 void key_handler(t_config *config)
@@ -372,7 +390,7 @@ int main(int argc, char **argv)
 	int j = 0;
 
 	ini_images(&game_conf);
-	game(&game_conf);
-	key_handler(&game_conf);
-	free_struct(&game_conf);
+    game(&game_conf);
+    key_handler(&game_conf);
+    free_struct(&game_conf);
 }

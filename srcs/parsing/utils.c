@@ -6,12 +6,12 @@
 /*   By: asbai-el <asbai-el@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 20:41:11 by asbai-el          #+#    #+#             */
-/*   Updated: 2020/02/25 20:41:11 by asbai-el         ###   ########.fr       */
+/*   Updated: 2021/06/25 21:40:03 by asbai-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#include "cub3d.h"
+#include "../../includes/cub3d.h"
 
 void initialize_conf(t_config *conf)
 {

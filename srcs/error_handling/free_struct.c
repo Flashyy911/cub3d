@@ -2,7 +2,7 @@
 // Created by Anass Sbai el idrissi on 2/20/20.
 //
 
-#include "cub3d.h"
+#include "../../includes/cub3d.h"
 
 void free_struct(t_config *game_conf)
 {

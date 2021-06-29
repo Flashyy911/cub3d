@@ -6,11 +6,11 @@
 /*   By: asbai-el <asbai-el@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 20:40:54 by asbai-el          #+#    #+#             */
-/*   Updated: 2020/02/25 20:40:54 by asbai-el         ###   ########.fr       */
+/*   Updated: 2021/06/25 21:39:16 by asbai-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3d.h"
+#include "../../includes/cub3d.h"
 
 void ft_get_resolution(char *line, t_config *game_conf)
 {

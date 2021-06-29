@@ -7,7 +7,7 @@
 #include <math.h>
 #include <fcntl.h>
 #include "libft.h"
-#include "mlx.h"
+#include "../minilibx_opengl_20191021/mlx.h"
 #include "get_next_line.h"
 
 #ifndef CUB3D_CUB3D_H
@@ -75,9 +75,35 @@ typedef struct		s_img
 
 typedef struct	s_sprite
 {
-	double x;
-	double y;
+    double x;
+    double y;
 }				t_sprite;
+
+typedef struct	s_game
+{
+    double posX;
+    double posY;
+    double dirX;
+    double dirY;
+    double planeY;
+    double planeX;
+    double cameraX;
+    double rayDirX;
+    double rayDirY;
+    int mapX;
+    int mapY;
+    double sideDistX;
+	double sideDistY;
+    double deltaDistX;
+    double deltaDistY;
+    double perpWallDist;
+    //what direction to step in x or y-direction (either +1 or -1)
+    int stepX;
+	int stepY;
+
+	int hit;   //was there a wall game_conf.hit?
+	int side;  //was a NS or a EW wall game_conf.hit?
+}				t_game;
 
 typedef struct		s_config
 {

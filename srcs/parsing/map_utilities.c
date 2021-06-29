@@ -1,7 +1,7 @@
 //
 // Created by Anass Sbai el idrissi on 2/21/20.
 //
-#include "cub3d.h"
+#include "../../includes/cub3d.h"
 
 
 void    set_map(t_config *game_conf,char *line, int fd_cub)

@@ -6,12 +6,12 @@
 /*   By: asbai-el <asbai-el@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 20:41:04 by asbai-el          #+#    #+#             */
-/*   Updated: 2020/02/25 20:41:04 by asbai-el         ###   ########.fr       */
+/*   Updated: 2021/06/25 21:39:29 by asbai-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#include "cub3d.h"
+#include "../../includes/cub3d.h"
 
 t_config    ft_parse(char *path)
 {
@@ -30,6 +30,7 @@ void fill_conf_infos(t_config *game_conf)
     int gnl_return;
 
     line = NULL;
+    printf("%s", game_conf->path);
     gnl_return = 1;
     if ((fd_cub = open(game_conf->path, O_RDONLY)) < 0)
         exit(1);

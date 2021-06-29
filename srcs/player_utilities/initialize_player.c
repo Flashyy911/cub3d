@@ -6,11 +6,11 @@
 /*   By: asbai-el <asbai-el@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/25 20:38:50 by asbai-el          #+#    #+#             */
-/*   Updated: 2020/02/26 21:06:58 by asbai-el         ###   ########.fr       */
+/*   Updated: 2021/06/25 21:40:20 by asbai-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3d.h"
+#include "../../includes/cub3d.h"
 
 void ini_dir(char dir, t_player *player)
 {

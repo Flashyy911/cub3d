@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Cub3d"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/asbai-el/CLionProjects/Cub3d"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/asbai-el/CLionProjects/Cub3d"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/asbai-el/CLionProjects/Cub3d"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Cub3d">
+				<Option output="/Users/asbai-el/CLionProjects/Cub3d/Cub3d" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/asbai-el/CLionProjects/Cub3d"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/asbai-el/CLionProjects/Cub3d/includes"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 Cub3d"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Cub3d/fast">
+				<Option output="/Users/asbai-el/CLionProjects/Cub3d/Cub3d" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/asbai-el/CLionProjects/Cub3d"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/asbai-el/CLionProjects/Cub3d/includes"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 Cub3d/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/asbai-el/CLionProjects/Cub3d/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/gnl/get_next_line.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/gnl/get_next_line_utils.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/includes/cub3d.h">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/includes/get_next_line.h">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/includes/libft.h">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/libft/ft_atoi.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/libft/ft_isalpha.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/libft/ft_isdigit.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/libft/ft_isspace.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/libft/ft_putchar_fd.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/libft/ft_putendl_fd.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/libft/ft_putstr_fd.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/libft/ft_strncmp.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/main.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/srcs/error_handling/free_struct.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/srcs/error_handling/put_error.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/filling_utilities.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/map_utilities.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/parsing.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/utils.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/srcs/player_utilities/initialize_player.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/srcs/sprite/initialize_sprite.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/srcs/sprite/sort_sprites.c">
+			<Option target="Cub3d"/>
+		</Unit>
+		<Unit filename="/Users/asbai-el/CLionProjects/Cub3d/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

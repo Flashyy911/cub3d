@@ -1,5 +1,5 @@
 
-#include "cub3d.h"
+#include "../../includes/cub3d.h"
 
 void fill_position(t_config *config)
 {

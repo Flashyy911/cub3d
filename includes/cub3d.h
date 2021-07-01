@@ -103,6 +103,10 @@ typedef struct	s_game
 
 	int hit;   //was there a wall game_conf.hit?
 	int side;  //was a NS or a EW wall game_conf.hit?
+    double wallX; //where exactly the wall was game_conf.hit
+    int texX;
+    double step;
+    int lineHeight;
 }				t_game;
 
 typedef struct		s_config

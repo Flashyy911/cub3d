@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/asbai-el/CLionProjects/Cub3d/gnl/get_next_line.c
-../includes/get_next_line.h
-/Users/asbai-el/CLionProjects/Cub3d/includes/get_next_line.h
-
-/Users/asbai-el/CLionProjects/Cub3d/gnl/get_next_line_utils.c
-../includes/get_next_line.h
-/Users/asbai-el/CLionProjects/Cub3d/includes/get_next_line.h
-
 /Users/asbai-el/CLionProjects/Cub3d/includes/cub3d.h
 stdio.h
 -
@@ -46,42 +38,6 @@ stddef.h
 unistd.h
 -
 
-/Users/asbai-el/CLionProjects/Cub3d/libft/ft_atoi.c
-libft.h
-/Users/asbai-el/CLionProjects/Cub3d/libft/libft.h
-stdio.h
--
-
-/Users/asbai-el/CLionProjects/Cub3d/libft/ft_isalpha.c
-
-/Users/asbai-el/CLionProjects/Cub3d/libft/ft_isdigit.c
-
-/Users/asbai-el/CLionProjects/Cub3d/libft/ft_isspace.c
-
-/Users/asbai-el/CLionProjects/Cub3d/libft/ft_putchar_fd.c
-libft.h
-/Users/asbai-el/CLionProjects/Cub3d/libft/libft.h
-
-/Users/asbai-el/CLionProjects/Cub3d/libft/ft_putendl_fd.c
-libft.h
-/Users/asbai-el/CLionProjects/Cub3d/libft/libft.h
-
-/Users/asbai-el/CLionProjects/Cub3d/libft/ft_putstr_fd.c
-libft.h
-/Users/asbai-el/CLionProjects/Cub3d/libft/libft.h
-
-/Users/asbai-el/CLionProjects/Cub3d/libft/ft_strncmp.c
-libft.h
-/Users/asbai-el/CLionProjects/Cub3d/libft/libft.h
-
-/Users/asbai-el/CLionProjects/Cub3d/libft/libft.h
-stdlib.h
--
-stddef.h
--
-unistd.h
--
-
 /Users/asbai-el/CLionProjects/Cub3d/main.c
 includes/cub3d.h
 /Users/asbai-el/CLionProjects/Cub3d/includes/cub3d.h
@@ -91,8 +47,6 @@ includes/cub3d.h
 /Users/asbai-el/CLionProjects/Cub3d/srcs/error_handling/free_struct.c
 ../../includes/cub3d.h
 /Users/asbai-el/CLionProjects/Cub3d/includes/cub3d.h
-
-/Users/asbai-el/CLionProjects/Cub3d/srcs/error_handling/put_error.c
 
 /Users/asbai-el/CLionProjects/Cub3d/srcs/parsing/filling_utilities.c
 ../../includes/cub3d.h
@@ -117,6 +71,4 @@ includes/cub3d.h
 /Users/asbai-el/CLionProjects/Cub3d/srcs/sprite/initialize_sprite.c
 ../../includes/cub3d.h
 /Users/asbai-el/CLionProjects/Cub3d/includes/cub3d.h
-
-/Users/asbai-el/CLionProjects/Cub3d/srcs/sprite/sort_sprites.c
 

@@ -106,7 +106,25 @@ typedef struct	s_game
     double wallX; //where exactly the wall was game_conf.hit
     int texX;
     double step;
+    int drawStart;
     int lineHeight;
+    int texY;
+    double texPos;
+    int color;
+    int drawEnd;
+    double spriteX;
+    double spriteY;
+    double invDet ;
+	double transformX;
+	double transformY;  //this is actually the depth inside the screen, that what Z is in 3D
+	int spriteScreenX; 
+	int spriteHeight;
+    int drawStartY;
+    int drawEndY;
+    int spriteWidth;
+    int drawStartX;
+    int drawEndX;
+    int stripe;
 }				t_game;
 
 typedef struct		s_config

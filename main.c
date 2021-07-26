@@ -141,35 +141,36 @@ void game(t_config *config)
 		
 
 		//calculate lowest and highest pixel to fill in current stripe
-		int drawStart = -game_conf.lineHeight / 2 + config->resl.height / 2;
-		if (drawStart < 0)
-			drawStart = 0;
-		int drawEnd = game_conf.lineHeight / 2 + config->resl.height / 2;
-		if (drawEnd >= config->resl.height)
-			drawEnd = config->resl.height - 1;
+		
+		game_conf.drawStart= -game_conf.lineHeight / 2 + config->resl.height / 2;
+		if (game_conf.drawStart< 0)
+			game_conf.drawStart= 0;
+		game_conf.drawEnd = game_conf.lineHeight / 2 + config->resl.height / 2;
+		if (game_conf.drawEnd >= config->resl.height)
+			game_conf.drawEnd = config->resl.height - 1;
 
 		
 		game_conf.step = 1.0 * config->img[0].height / game_conf.lineHeight;
-		double texPos = (drawStart - config->resl.height / 2 + game_conf.lineHeight / 2) * game_conf.step;
-		int color = get_direction(game_conf.rayDirX, game_conf.rayDirY, game_conf.side);
-		while (drawStart < drawEnd)
+		game_conf.texPos = (game_conf.drawStart- config->resl.height / 2 + game_conf.lineHeight / 2) * game_conf.step;
+		game_conf.color = get_direction(game_conf.rayDirX, game_conf.rayDirY, game_conf.side);
+		while (game_conf.drawStart< game_conf.drawEnd)
 		{
 			//putpixel (x, drawStart, config, color);
-			int texY = (int) texPos & (config->img[0].height - 1);
-			texPos += game_conf.step;
-			if (color == 0)
-				config->im.data[(x + drawStart * config->resl.width)] = config->img[0].data[game_conf.texX + texY *
+			game_conf.texY = (int) game_conf.texPos & (config->img[0].height - 1);
+			game_conf.texPos += game_conf.step;
+			if (game_conf.color == 0)
+				config->im.data[(x + game_conf.drawStart* config->resl.width)] = config->img[0].data[game_conf.texX + game_conf.texY *
 																							   config->img[0].width];
-			else if (color == 1)
-				config->im.data[(x + drawStart * config->resl.width)] = config->img[1].data[game_conf.texX + texY *
+			else if (game_conf.color == 1)
+				config->im.data[(x + game_conf.drawStart* config->resl.width)] = config->img[1].data[game_conf.texX + game_conf.texY *
 																							   config->img[1].width];
-			else if (color == 2)
-				config->im.data[(x + drawStart * config->resl.width)] = config->img[2].data[game_conf.texX + texY *
+			else if (game_conf.color == 2)
+				config->im.data[(x + game_conf.drawStart* config->resl.width)] = config->img[2].data[game_conf.texX + game_conf.texY *
 																							   config->img[2].width];
 			else
-				config->im.data[(x + drawStart * config->resl.width)] = config->img[3].data[game_conf.texX + texY *
+				config->im.data[(x + game_conf.drawStart* config->resl.width)] = config->img[3].data[game_conf.texX + game_conf.texY *
 																							   config->img[3].width];
-			drawStart++;
+			game_conf.drawStart++;
 		}
 		config->z_buffer[x] = game_conf.perpWallDist;
 		x++;
@@ -187,40 +188,40 @@ void game(t_config *config)
 
 	while (j < config->n_sprites)
 	{
-		double spriteX = config->sprites[config->index_sprites[j]].x - game_conf.posX;
-		double spriteY = config->sprites[config->index_sprites[j]].y - game_conf.posY;
+		game_conf.spriteX = config->sprites[config->index_sprites[j]].x - game_conf.posX;
+		game_conf.spriteY  = config->sprites[config->index_sprites[j]].y - game_conf.posY;  
 
-		double invDet = 1.0 / (game_conf.planeX * game_conf.dirY - game_conf.dirX * game_conf.planeY);
-		double transformX = invDet * (game_conf.dirY * spriteX - game_conf.dirX * spriteY);
-		double transformY = invDet * (-game_conf.planeY * spriteX + game_conf.planeX * spriteY); //this is actually the depth inside the screen, that what Z is in 3D
-		int spriteScreenX = (int)((config->resl.width / 2) * (1 + transformX / transformY));
-		int spriteHeight = abs((int)(config->resl.height / (transformY)));
+		game_conf.invDet  = 1.0 / (game_conf.planeX * game_conf.dirY - game_conf.dirX * game_conf.planeY);
+		game_conf.transformX  = game_conf.invDet  * (game_conf.dirY * game_conf.spriteX - game_conf.dirX * game_conf.spriteY );
+		game_conf.transformY  = game_conf.invDet  * (-game_conf.planeY * game_conf.spriteX + game_conf.planeX * game_conf.spriteY ); //this is actually the depth inside the screen, that what Z is in 3D
+		game_conf.spriteScreenX  = (int)((config->resl.width / 2) * (1 + game_conf.transformX  / game_conf.transformY ));
+		game_conf.spriteHeight  = abs((int)(config->resl.height / (game_conf.transformY )));
 
-		int drawStartY = -spriteHeight / 2 + config->resl.height / 2;
-		if(drawStartY < 0) drawStartY = 0;
-		int drawEndY = spriteHeight / 2 + config->resl.height / 2;
-		if(drawEndY >= config->resl.height) drawEndY = config->resl.height - 1;
+		game_conf.drawStartY  = -game_conf.spriteHeight  / 2 + config->resl.height / 2;
+		if(game_conf.drawStartY  < 0) game_conf.drawStartY  = 0;
+		game_conf.drawEndY  = game_conf.spriteHeight  / 2 + config->resl.height / 2;
+		if(game_conf.drawEndY  >= config->resl.height) game_conf.drawEndY  = config->resl.height - 1;
 
-		int spriteWidth = abs( (int) (config->resl.height / (transformY)));
-		int drawStartX = -spriteWidth / 2 + spriteScreenX;
-		if(drawStartX < 0) drawStartX = 0;
-		int drawEndX = spriteWidth / 2 + spriteScreenX;
-		if (drawEndX >= config->resl.width)
-			drawEndX = config->resl.width - 1;
+		game_conf.spriteWidth  = abs( (int) (config->resl.height / (game_conf.transformY )));
+		game_conf.drawStartX  = -game_conf.spriteWidth  / 2 + game_conf.spriteScreenX ;
+		if(game_conf.drawStartX  < 0) game_conf.drawStartX  = 0;
+		game_conf.drawEndX  = game_conf.spriteWidth  / 2 + game_conf.spriteScreenX ;
+		if (game_conf.drawEndX  >= config->resl.width)
+			game_conf.drawEndX  = config->resl.width - 1;
 
 		int stripe;
-		stripe = drawStartX;
-		while (stripe < drawEndX)
+		stripe = game_conf.drawStartX ;
+		while (stripe < game_conf.drawEndX )
 		{
-			game_conf.texX = (int)(256 * (stripe - (-spriteWidth / 2 + spriteScreenX)) * T_WIDTH / spriteWidth) / 256;
+			game_conf.texX = (int)(256 * (stripe - (-game_conf.spriteWidth  / 2 + game_conf.spriteScreenX )) * T_WIDTH / game_conf.spriteWidth ) / 256;
 			int y;
-			y = drawStartY;
-			if (transformY > 0 && stripe > 0 && stripe < config->resl.width && transformY < config->z_buffer[stripe])
+			y = game_conf.drawStartY ;
+			if (game_conf.transformY  > 0 && stripe > 0 && stripe < config->resl.width && game_conf.transformY  < config->z_buffer[stripe])
 			{
-				while (y < drawEndY)
+				while (y < game_conf.drawEndY )
 				{
-					int d = (y) * 256 - config->resl.height * 128 + spriteHeight * 128;
-					int texY = ((d * T_HEIGHT) / spriteHeight) / 256;
+					int d = (y) * 256 - config->resl.height * 128 + game_conf.spriteHeight  * 128;
+					int texY = ((d * T_HEIGHT) / game_conf.spriteHeight ) / 256;
 					if ((config->img[4].data[game_conf.texX + texY * config->img[4].width] & 0x00FFFFFF) != 0)
 						config->im.data[(stripe + ((y) * config->resl.width))] = config->img[4].data[game_conf.texX + texY * config->img[4].width];
 					y++;
